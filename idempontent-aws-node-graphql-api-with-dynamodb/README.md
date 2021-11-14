@@ -14,7 +14,7 @@ authorAvatar: 'https://avatars0.githubusercontent.com/u/5903107?v=4&s=140'
 # GraphQL query endpoint in NodeJS on AWS with DynamoDB and Idempotence Guarantee
 
 This example demonstrates how to ensure idempotence in a GraphQL service with the Serverless Framework, targeting AWS.
-It is based on the example of [GraphQL API with DynamoDB](../aws-node-graphql-api-with-dynamodb/README.md).
+It is based on the example of [GraphQL API with DynamoDB](https://github.com/serverless/examples/tree/master/aws-node-graphql-api-with-dynamodb).
 
 ## How to guarantee idempotence
 
