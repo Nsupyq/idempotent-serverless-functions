@@ -21,8 +21,9 @@ const getPetType = () => {
     return 'dog';
 }
 
-const getPet = () => {
+const getPet = (id) => {
     return {
+        _id: id,
         type: getPetType(),
         name: faker.name.findName(),
     };
@@ -38,13 +39,12 @@ const createConn = async () => {
     db = client.db('test');
 };
 
-const performQuery = async () => {
+const performQuery = async (req) => {
     const pets = db.collection('pets');
 
-    const newPet = getPet();
+    const newPet = getPet(req[id]);
 
     return {
-        insertedPet: newPet,
         mongoResult: await pets.insertOne(newPet),
     };
 };
@@ -66,7 +66,7 @@ app.get('/hello', async function (req, res) {
 
     // Connection ready. Perform insert and return result.
     try {
-        res.json(await performQuery());
+        res.json(await performQuery(req));
         return;
     } catch (e) {
         res.send({
