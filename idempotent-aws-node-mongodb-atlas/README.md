@@ -16,4 +16,5 @@ An example idempotent app, based on this [blog post](https://mattwelke.com/2019/
 
 ## How to guarantee idempotence
 
-The side effect is inserting the new pet. We make the function idempotent by using the [`awsRequestId`](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-context.html) provided by AWS Lambda to be `_id`. Then the function will insert only one new pet even if pets.insertOne(newPet) is retried.
+The side effect is inserting the new pet. The function can be idempotent by using the [`awsRequestId`](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-context.html) provided by AWS Lambda to be `_id`. Then the function will insert only one new pet even if pets.insertOne(newPet) is retried.
+Another approach is to require the client to provide a unique id to be `_id`.
