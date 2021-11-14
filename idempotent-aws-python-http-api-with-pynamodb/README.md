@@ -11,7 +11,7 @@ authorAvatar: 'https://avatars0.githubusercontent.com/u/1323872?v=4&s=140'
 -->
 # Serverless HTTP API
 
-This template demonstrates how to add idempotence in an HTTP API using dynamodb. It is based on the example of [AWS Serverless HTTP API with DynamoDB store example in Python](../aws-python-http-api-with-dynamodb/README.md).
+This template demonstrates how to add idempotence in an HTTP API using dynamodb. It is based on the example of [AWS Serverless HTTP API with DynamoDB store example in Python](https://github.com/serverless/examples/tree/master/aws-python-http-api-with-pynamodb).
 
 ## Structure
 
