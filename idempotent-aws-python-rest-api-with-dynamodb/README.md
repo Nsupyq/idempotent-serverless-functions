@@ -12,7 +12,7 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/8434141?v=4&s=140'
 -->
 # Serverless REST API with Idempotence Guaranteed
 
-This example demonstrates how to ensure add idempotence in a [RESTful Web Services](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) allowing you to create, list, get, update and delete Todos. DynamoDB is used to store the data. This is just an example and of course you could use any data storage as a backend. It is based on the example of [Serverless REST API with DynamoDB store example in Python](../aws-python-rest-api-with-dynamodb/README.md).
+This example demonstrates how to ensure add idempotence in a [RESTful Web Services](https://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services) allowing you to create, list, get, update and delete Todos. DynamoDB is used to store the data. This is just an example and of course you could use any data storage as a backend. It is based on the example of [Serverless REST API with DynamoDB store example in Python](https://github.com/serverless/examples/tree/master/aws-python-rest-api-with-dynamodb).
 
 ## Structure
 

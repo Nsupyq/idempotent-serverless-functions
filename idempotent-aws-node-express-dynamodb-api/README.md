@@ -13,7 +13,7 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 
 # Serverless Framework Node Express API on AWS with Idempotence Guarantee
 
-This template demonstrates how to add idempotence in a simple Node Express API service, backed by DynamoDB database, running on AWS Lambda using the traditional Serverless Framework. It is based on the example of [Serverless Framework Node Express API on AWS](../aws-node-express-dynamodb-api/README.md).
+This template demonstrates how to add idempotence in a simple Node Express API service, backed by DynamoDB database, running on AWS Lambda using the traditional Serverless Framework. It is based on the example of [Serverless Framework Node Express API on AWS](https://github.com/serverless/examples/tree/master/aws-node-express-dynamodb-api).
 
 
 ## Anatomy of the template
